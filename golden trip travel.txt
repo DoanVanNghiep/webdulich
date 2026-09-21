@@ -1,0 +1,1104 @@
+Thiết kế và xây dựng một website du lịch hiện đại, cao cấp, chuyên nghiệp với thương hiệu **GOLDEN TRIP TRAVEL**.
+
+## 1. MỤC TIÊU WEBSITE
+
+Website là nền tảng giới thiệu và bán các tour du lịch trong nước và quốc tế của **Golden Trip Travel**.
+
+Phong cách tổng thể:
+
+* Premium
+* Modern
+* Luxury Travel
+* Cinematic
+* Tràn đầy cảm giác khám phá và nghỉ dưỡng
+* Hình ảnh lớn, đẹp, giàu cảm xúc
+* Animation mượt mà, tinh tế
+* Responsive hoàn toàn trên Desktop / Tablet / Mobile
+
+Website phải tạo cảm giác như một thương hiệu du lịch cao cấp, không phải một website bán tour thông thường.
+
+---
+
+# 2. BRANDING
+
+Tên thương hiệu:
+
+**GOLDEN TRIP TRAVEL**
+
+Tagline đề xuất:
+
+**"Your Journey, Our Story."**
+
+Hoặc:
+
+**"Khám phá thế giới – Kiến tạo hành trình."**
+
+Màu sắc chủ đạo:
+
+* Deep Navy / Midnight Blue
+* Golden / Champagne Gold
+* White
+* Warm Beige
+* Một chút Emerald hoặc Ocean Blue làm màu phụ
+
+Không sử dụng quá nhiều màu.
+
+Thiết kế cần tạo cảm giác:
+
+> Luxury + Adventure + Trust + Freedom
+
+Typography:
+
+* Heading: font hiện đại, sang trọng, có personality
+* Body: font sans-serif dễ đọc
+* Có sự tương phản rõ giữa heading và body
+
+---
+
+# 3. TECH STACK
+
+Nếu cần lựa chọn công nghệ, ưu tiên:
+
+* React
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion / Motion
+* Lucide Icons
+* Swiper hoặc Embla Carousel
+* GSAP nếu cần animation phức tạp
+* Responsive Design
+
+Code phải:
+
+* Component-based
+* Clean
+* Reusable
+* Maintainable
+* Có cấu trúc rõ ràng
+* Không hard-code quá nhiều
+* Dễ mở rộng thành website production thực tế
+
+---
+
+# 4. LANDING PAGE
+
+## HERO SECTION
+
+Đây phải là phần ấn tượng nhất website.
+
+Sử dụng background video hoặc ảnh du lịch full-screen.
+
+Ví dụ:
+
+* Vịnh Hạ Long
+* Đà Nẵng
+* Phú Quốc
+* Nhật Bản
+* Bali
+* Châu Âu
+
+Hero gồm:
+
+Logo:
+
+**GOLDEN TRIP TRAVEL**
+
+Heading lớn:
+
+**"Discover The World With Golden Trip"**
+
+Subheading:
+
+**"Những hành trình đáng nhớ bắt đầu từ một bước chân."**
+
+CTA:
+
+**Khám phá hành trình**
+
+CTA phụ:
+
+**Xem tất cả tour**
+
+### Hero animation
+
+Khi load website:
+
+1. Logo fade + scale nhẹ
+2. Heading xuất hiện theo từng dòng
+3. Description fade-up
+4. CTA slide-up
+5. Background image/video có hiệu ứng Ken Burns / slow zoom
+6. Có light parallax khi scroll
+7. Các phần tử foreground chuyển động nhẹ theo mouse movement
+
+Không được làm animation quá nhanh hoặc gây khó chịu.
+
+---
+
+# 5. NAVIGATION BAR
+
+Navbar:
+
+* Logo Golden Trip Travel
+* Trang chủ
+* Tour du lịch
+* Điểm đến
+* Ưu đãi
+* Về chúng tôi
+* Blog
+* Liên hệ
+
+CTA:
+
+**Đặt tour**
+
+Navbar ban đầu có background trong suốt.
+
+Khi scroll:
+
+* Navbar chuyển sang background trắng hoặc dark glass
+* Backdrop blur
+* Shadow nhẹ
+* Logo chuyển màu phù hợp
+* Animation chuyển trạng thái mượt
+
+Mobile:
+
+* Hamburger menu
+* Full-screen mobile navigation
+* Menu item xuất hiện stagger animation
+
+---
+
+# 6. SEARCH TOUR
+
+Ngay dưới hoặc trong Hero tạo một Travel Search Box.
+
+Các trường:
+
+**Bạn muốn đi đâu?**
+
+* Điểm đến
+
+**Thời gian**
+
+* Ngày khởi hành
+
+**Số người**
+
+* Người lớn
+* Trẻ em
+
+**Ngân sách**
+
+* Khoảng giá
+
+Button:
+
+**Tìm kiếm**
+
+Search box có:
+
+* Glassmorphism
+* Border nhẹ
+* Shadow
+* Hover effect
+* Focus animation
+* Smooth transition
+
+---
+
+# 7. FEATURED DESTINATIONS
+
+Section:
+
+**"Explore The World"**
+
+Subtitle:
+
+**"Những điểm đến được yêu thích nhất"**
+
+Hiển thị các destination card lớn.
+
+Ví dụ:
+
+### Việt Nam
+
+Hạ Long
+
+### Việt Nam
+
+Đà Nẵng
+
+### Việt Nam
+
+Phú Quốc
+
+### Nhật Bản
+
+Tokyo
+
+### Hàn Quốc
+
+Seoul
+
+### Thái Lan
+
+Bangkok
+
+### Singapore
+
+Singapore
+
+### Pháp
+
+Paris
+
+Card sử dụng:
+
+* Ảnh full card
+* Gradient overlay
+* Destination name
+* Country
+* Số tour
+* Arrow icon
+
+### Hover animation
+
+Khi hover:
+
+* Image zoom 1.08
+* Gradient thay đổi
+* Text slide nhẹ lên
+* Arrow xoay / translate
+* Card scale nhẹ
+* Cursor interaction
+
+Không làm card nhảy hoặc layout bị shift.
+
+---
+
+# 8. POPULAR TOURS
+
+Heading:
+
+**"Popular Journeys"**
+
+Hiển thị tour cards.
+
+Mỗi card gồm:
+
+* Image
+* Badge "Best Seller"
+* Destination
+* Tên tour
+* Rating
+* Số review
+* Thời lượng
+* Giá
+* Giá cũ nếu có
+* Giá từ
+* Button "Xem chi tiết"
+
+Ví dụ:
+
+**Hạ Long – Ninh Bình 3N2Đ**
+
+⭐ 4.9 (128 reviews)
+
+3 ngày 2 đêm
+
+Từ:
+
+**3.490.000 VNĐ**
+
+Button:
+
+**Khám phá tour →**
+
+Hover:
+
+* Card translateY
+* Image zoom
+* Button xuất hiện
+* Shadow tăng
+* Badge animation nhẹ
+
+---
+
+# 9. SPECIAL OFFER
+
+Tạo một section đặc biệt:
+
+## "Golden Deals"
+
+Background đẹp, cinematic.
+
+Nội dung:
+
+**Ưu đãi mùa du lịch**
+
+"Giảm đến 30% cho các tour được chọn"
+
+Countdown:
+
+**05 : 12 : 34 : 21**
+
+Labels:
+
+Days / Hours / Minutes / Seconds
+
+CTA:
+
+**Khám phá ưu đãi**
+
+Animation:
+
+* Background parallax
+* Floating particles rất nhẹ
+* Countdown animation
+* CTA glow nhẹ
+
+---
+
+# 10. WHY CHOOSE GOLDEN TRIP
+
+Section:
+
+**"Why Golden Trip?"**
+
+4–6 feature cards:
+
+### 01
+
+**Hành trình được tuyển chọn**
+
+Các tour được thiết kế và lựa chọn kỹ lưỡng.
+
+### 02
+
+**Giá minh bạch**
+
+Không phí ẩn.
+
+### 03
+
+**Đội ngũ chuyên nghiệp**
+
+Hỗ trợ khách hàng trong suốt hành trình.
+
+### 04
+
+**An tâm trên mọi hành trình**
+
+Đối tác uy tín và dịch vụ chất lượng.
+
+### 05
+
+**Hỗ trợ 24/7**
+
+Luôn có người đồng hành khi cần.
+
+### 06
+
+**Trải nghiệm cá nhân hóa**
+
+Thiết kế hành trình phù hợp nhu cầu.
+
+Animation:
+
+* Icon floating nhẹ
+* Cards reveal khi scroll
+* Stagger animation
+* Hover icon rotate / scale
+* Border glow nhẹ
+
+---
+
+# 11. ABOUT GOLDEN TRIP
+
+Tạo section storytelling.
+
+Layout:
+
+Bên trái:
+
+Ảnh lớn hoặc video.
+
+Bên phải:
+
+**"More Than A Trip"**
+
+Nội dung:
+
+> Golden Trip Travel không chỉ đưa bạn đến một địa điểm.
+> Chúng tôi tạo nên những hành trình để bạn khám phá, trải nghiệm và lưu giữ những khoảnh khắc đáng nhớ.
+
+Hiển thị statistic:
+
+**10+**
+
+Năm kinh nghiệm
+
+**50K+**
+
+Khách hàng
+
+**100+**
+
+Điểm đến
+
+**98%**
+
+Khách hàng hài lòng
+
+Counter animation khi scroll vào viewport.
+
+---
+
+# 12. TRAVEL EXPERIENCE
+
+Tạo một section storytelling dạng horizontal scroll.
+
+Các bước:
+
+**01 — Discover**
+
+Khám phá điểm đến
+
+↓
+
+**02 — Plan**
+
+Lên kế hoạch
+
+↓
+
+**03 — Experience**
+
+Tận hưởng hành trình
+
+↓
+
+**04 — Remember**
+
+Lưu giữ kỷ niệm
+
+Khi scroll:
+
+* Content chuyển động ngang
+* Image thay đổi
+* Progress indicator
+* Smooth scrolling
+* Parallax
+
+---
+
+# 13. CUSTOMER REVIEWS
+
+Section:
+
+**"Stories From Our Travelers"**
+
+Review card gồm:
+
+Avatar
+
+Tên khách hàng
+
+Tour đã tham gia
+
+Rating ⭐⭐⭐⭐⭐
+
+Review.
+
+Carousel:
+
+* Auto-play
+* Drag
+* Arrow navigation
+* Pagination
+
+Hover:
+
+* Pause autoplay
+* Card elevation
+* Avatar scale
+
+---
+
+# 14. INSTAGRAM / TRAVEL GALLERY
+
+Heading:
+
+**"Follow The Journey"**
+
+Hiển thị gallery ảnh dạng masonry/grid.
+
+Ảnh:
+
+* Du lịch
+* Biển
+* Núi
+* Thành phố
+* Văn hóa
+* Ẩm thực
+
+Hover:
+
+* Image zoom
+* Dark overlay
+* Instagram icon
+* Location
+* Caption
+
+Có thể click để mở Lightbox.
+
+---
+
+# 15. BLOG / TRAVEL STORIES
+
+Section:
+
+**"Travel Stories"**
+
+Blog cards:
+
+* Travel Guide
+* Kinh nghiệm du lịch
+* Địa điểm ăn uống
+* Tips săn vé máy bay
+* Kinh nghiệm xin visa
+* Packing checklist
+
+Card gồm:
+
+Ảnh
+
+Category
+
+Title
+
+Excerpt
+
+Read time
+
+Ngày đăng
+
+Button:
+
+**Đọc thêm →**
+
+---
+
+# 16. NEWSLETTER
+
+Section:
+
+**"Don't Miss Your Next Adventure"**
+
+Text:
+
+"Nhận những ưu đãi và cảm hứng du lịch mới nhất."
+
+Input:
+
+**Email của bạn**
+
+Button:
+
+**Đăng ký**
+
+Có animation khi submit thành công.
+
+---
+
+# 17. FOOTER
+
+Footer chuyên nghiệp gồm:
+
+### GOLDEN TRIP TRAVEL
+
+"Your Journey, Our Story."
+
+### Khám phá
+
+* Trang chủ
+* Tour
+* Điểm đến
+* Ưu đãi
+
+### Công ty
+
+* Về chúng tôi
+* Liên hệ
+* Chính sách
+* Điều khoản
+
+### Hỗ trợ
+
+* FAQ
+* Chính sách hoàn hủy
+* Thanh toán
+* Hỗ trợ khách hàng
+
+### Contact
+
+Hotline:
+
+**1900 XXXX**
+
+Email:
+
+**[hello@goldentriptravel.vn](mailto:hello@goldentriptravel.vn)**
+
+Social:
+
+Facebook
+Instagram
+TikTok
+YouTube
+
+Footer có bản đồ nhỏ hoặc hình ảnh destination.
+
+---
+
+# 18. TOUR DETAIL PAGE
+
+Khi click vào tour phải có trang chi tiết.
+
+Hero:
+
+* Large image
+* Tour title
+* Rating
+* Location
+* Duration
+
+Thông tin:
+
+* Lịch trình
+* Giá
+* Bao gồm
+* Không bao gồm
+* Điểm nổi bật
+* Chính sách
+* FAQ
+
+Timeline itinerary:
+
+**Day 01**
+
+Khởi hành
+
+↓
+
+**Day 02**
+
+Khám phá
+
+↓
+
+**Day 03**
+
+Trải nghiệm
+
+Booking panel:
+
+**Đặt tour**
+
+Chọn:
+
+* Ngày
+* Số người
+* Gói dịch vụ
+
+Hiển thị:
+
+**Tổng tiền**
+
+Button:
+
+**Đặt ngay**
+
+Booking panel có sticky behavior khi scroll desktop.
+
+---
+
+# 19. DESTINATION PAGE
+
+Trang:
+
+**Destinations**
+
+Filter:
+
+* Việt Nam
+* Châu Á
+* Châu Âu
+* Châu Mỹ
+* Châu Úc
+
+Sort:
+
+* Phổ biến
+* Giá thấp → cao
+* Giá cao → thấp
+* Mới nhất
+
+Grid destination.
+
+Có search.
+
+---
+
+# 20. TOUR FILTER
+
+Trang Tour phải có sidebar/filter.
+
+Filter:
+
+### Điểm đến
+
+☐ Việt Nam
+☐ Nhật Bản
+☐ Hàn Quốc
+☐ Thái Lan
+☐ Singapore
+☐ Châu Âu
+
+### Giá
+
+Slider:
+
+0 → 50.000.000 VNĐ
+
+### Thời lượng
+
+☐ 1–3 ngày
+☐ 4–7 ngày
+☐ 8–14 ngày
+☐ 15+ ngày
+
+### Loại tour
+
+☐ Nghỉ dưỡng
+☐ Khám phá
+☐ Gia đình
+☐ Mạo hiểm
+☐ Văn hóa
+
+Kết quả update với animation.
+
+---
+
+# 21. MICRO INTERACTIONS
+
+Toàn website phải có micro-interaction.
+
+Bao gồm:
+
+* Button hover
+* Button press
+* Card hover
+* Image zoom
+* Icon animation
+* Link underline animation
+* Input focus
+* Checkbox animation
+* Toggle animation
+* Dropdown animation
+* Modal animation
+* Toast notification
+* Loading state
+* Skeleton loading
+* Scroll progress
+* Back-to-top button
+
+Cursor interaction trên desktop:
+
+Có thể tạo custom cursor rất nhẹ.
+
+Không sử dụng hiệu ứng cursor nếu làm giảm usability.
+
+---
+
+# 22. SCROLL ANIMATION
+
+Sử dụng scroll reveal:
+
+* fade-up
+* fade-left
+* fade-right
+* scale
+* blur → sharp
+* stagger children
+
+Các section xuất hiện theo viewport.
+
+Không animate tất cả element cùng lúc.
+
+Animation duration:
+
+**0.4–0.8s**
+
+Easing:
+
+**easeOut / cubic-bezier**
+
+Animation phải:
+
+* Smooth
+* Premium
+* Không giật
+* Không gây chóng mặt
+* Không ảnh hưởng performance
+
+Hỗ trợ:
+
+`prefers-reduced-motion`
+
+Nếu người dùng bật reduced motion thì giảm hoặc tắt animation.
+
+---
+
+# 23. PAGE TRANSITION
+
+Khi chuyển page:
+
+* Fade
+* Slide nhẹ
+* Không flash trắng
+* Giữ cảm giác cinematic
+
+Loading screen ban đầu:
+
+Logo:
+
+**GOLDEN TRIP**
+
+Progress line hoặc loading indicator.
+
+Sau khi load:
+
+Logo fade-out → Homepage reveal.
+
+---
+
+# 24. RESPONSIVE DESIGN
+
+Desktop:
+
+* 1440px
+* 1280px
+* 1024px
+
+Tablet:
+
+* 768px
+
+Mobile:
+
+* 390px
+* 375px
+* 360px
+
+Mobile phải được thiết kế riêng chứ không chỉ thu nhỏ Desktop.
+
+Đặc biệt:
+
+* Navbar
+* Hero
+* Search
+* Tour cards
+* Destination cards
+* Horizontal scrolling
+* Footer
+* Booking panel
+
+phải tối ưu cho mobile.
+
+---
+
+# 25. PERFORMANCE
+
+Mặc dù website nhiều animation nhưng phải tối ưu performance.
+
+Yêu cầu:
+
+* Lazy load images
+* WebP / AVIF
+* Responsive images
+* Code splitting
+* Lazy loading components
+* Không animation bằng thuộc tính gây layout thrashing
+* Ưu tiên transform / opacity
+* Hạn chế blur quá nặng
+* Không sử dụng quá nhiều particle
+* Không autoplay video trên mobile nếu ảnh hưởng performance
+
+Mục tiêu:
+
+* Smooth 60fps
+* Lighthouse Performance tốt
+* Không CLS lớn
+* Không blocking interaction
+
+---
+
+# 26. SEO
+
+Thiết kế cấu trúc SEO-friendly:
+
+Title:
+
+**Golden Trip Travel | Khám phá thế giới cùng Golden Trip**
+
+Meta description phù hợp.
+
+Semantic HTML:
+
+* header
+* nav
+* main
+* section
+* article
+* footer
+
+Hỗ trợ:
+
+* Open Graph
+* Twitter Card
+* JSON-LD
+* Sitemap
+* robots.txt
+
+Tour và destination phải có URL thân thiện.
+
+Ví dụ:
+
+`/tours/ha-long-ninh-binh-3-ngay`
+
+`/destinations/japan`
+
+---
+
+# 27. ACCESSIBILITY
+
+Website phải đảm bảo:
+
+* Keyboard navigation
+* Focus state
+* Alt text
+* Semantic HTML
+* ARIA khi cần
+* Contrast tốt
+* Reduced motion
+* Form validation rõ ràng
+
+---
+
+# 28. DATA / COMPONENT STRUCTURE
+
+Tạo dữ liệu mẫu cho:
+
+* tours
+* destinations
+* reviews
+* blogPosts
+* offers
+* faqs
+
+Không hard-code toàn bộ dữ liệu trực tiếp trong UI component.
+
+Ví dụ:
+
+```ts
+const tours = [
+  {
+    id: 1,
+    title: "Hạ Long - Ninh Bình 3N2Đ",
+    destination: "Vietnam",
+    duration: "3 ngày 2 đêm",
+    price: 3490000,
+    rating: 4.9,
+    reviews: 128,
+    image: "/images/halong.jpg"
+  }
+]
+```
+
+---
+
+# 29. UI/UX PRINCIPLES
+
+Ưu tiên:
+
+1. Visual hierarchy
+2. Readability
+3. Conversion
+4. Trust
+5. Premium feeling
+6. Performance
+
+Không:
+
+* Lạm dụng animation
+* Lạm dụng gradient
+* Lạm dụng glassmorphism
+* Dùng quá nhiều màu
+* Dùng font khó đọc
+* Làm UI rối
+* Dùng animation gây chóng mặt
+
+Website phải đẹp nhưng vẫn thực dụng.
+
+---
+
+# 30. FINAL EXPERIENCE
+
+Khi người dùng truy cập website, cảm giác mong muốn là:
+
+**"Đây là một công ty du lịch chuyên nghiệp và cao cấp."**
+
+Website cần có storytelling:
+
+**Inspiration → Discovery → Destination → Tour → Trust → Booking**
+
+Hãy thiết kế toàn bộ trải nghiệm xoay quanh hành trình của khách hàng.
+
+---
+
+# 31. YÊU CẦU OUTPUT
+
+Hãy tạo:
+
+1. Sitemap
+2. Design system
+3. Color palette
+4. Typography
+5. Component architecture
+6. Responsive layout
+7. Homepage
+8. Tour listing
+9. Tour detail
+10. Destination listing
+11. Destination detail
+12. About
+13. Blog
+14. Contact
+15. Booking flow
+16. Footer
+17. Animation system
+18. Hover interaction system
+
+Sau đó triển khai giao diện thực tế.
+
+Ưu tiên **chất lượng UI/UX và visual design**, không chỉ tạo một landing page đơn giản.
+
+Hãy đảm bảo website có cảm giác như một **travel startup cao cấp / international travel agency**, với hình ảnh lớn, typography đẹp, whitespace hợp lý, animation mượt và hệ thống component nhất quán.
+
+Nếu chưa có backend, hãy sử dụng mock data nhưng xây dựng architecture sao cho sau này có thể kết nối REST API.
+
+**Quan trọng:** Không tạo giao diện generic/template-looking. Hãy tạo một visual identity riêng cho **GOLDEN TRIP TRAVEL**.

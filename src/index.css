@@ -1,0 +1,660 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-gold: #d4af37;
+    --color-gold-light: #f3e5ab;
+    --color-navy: #070e20;
+    --page-bg: #f8fbff;
+    --surface: #ffffff;
+    --surface-warm: #fffaf0;
+    --ink: #152238;
+    --muted: #64748b;
+    --border-soft: rgba(15, 23, 42, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 32rem),
+      radial-gradient(circle at top right, rgba(212, 175, 55, 0.18), transparent 30rem),
+      var(--page-bg);
+    color: var(--ink);
+    font-family: 'Be Vietnam Pro', 'Manrope', system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #eff6ff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #38bdf8, #d4af37);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+  }
+}
+
+@layer utilities {
+  /* Luxury Gold Gradient Text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #0284c7 0%, #d4af37 48%, #0f766e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Gold Shimmer border */
+  .border-gold-subtle {
+    border-color: rgba(212, 175, 55, 0.25);
+  }
+
+  /* Luxury Glassmorphism */
+  .glass-dark {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    box-shadow: 0 18px 50px -28px rgba(15, 23, 42, 0.38);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(239, 249, 255, 0.9) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 18px 45px -30px rgba(15, 23, 42, 0.45);
+  }
+
+  .glass-card-hover:hover {
+    border-color: rgba(2, 132, 199, 0.28);
+    box-shadow: 0 24px 55px -30px rgba(2, 132, 199, 0.45);
+  }
+
+  /* Button Gold Glow */
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+  }
+  .gold-glow:hover {
+    box-shadow: 0 18px 40px -18px rgba(212, 175, 55, 0.58);
+  }
+}
+
+.travel-light {
+  background:
+    linear-gradient(180deg, rgba(248, 251, 255, 0.98), rgba(240, 249, 255, 0.96)),
+    var(--page-bg);
+  color: var(--ink);
+}
+
+.travel-light,
+.travel-light * {
+  font-family: 'Be Vietnam Pro', 'Manrope', system-ui, sans-serif !important;
+}
+
+.travel-light h1,
+.travel-light h2,
+.travel-light h3,
+.travel-light h4,
+.travel-light .font-serif,
+.travel-light .font-display {
+  font-family: 'Be Vietnam Pro', 'Manrope', system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.travel-light .flex-1 > div[class*='pt-'] h1,
+.travel-light .flex-1 > div[class*='pt-'] h2,
+.travel-light main section:not(.hero-section) h2 {
+  color: #075985 !important;
+  font-weight: 800 !important;
+  line-height: 1.14 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.travel-light .flex-1 > div[class*='pt-'] h1 .text-gold-gradient,
+.travel-light .flex-1 > div[class*='pt-'] h2 .text-gold-gradient,
+.travel-light main section:not(.hero-section) h2 .text-gold-gradient {
+  display: inline-block;
+  margin-top: 0.25rem;
+  background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 48%, #f59e0b 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+}
+
+.travel-light .flex-1 > div[class*='pt-'] > div > div:first-child,
+.travel-light main section:not(.hero-section) > div > div:first-child {
+  color: #172033 !important;
+}
+
+.travel-light main section:not(.hero-section),
+.travel-light main > div,
+.travel-light .flex-1 > div[class*='pt-'],
+.travel-light [class*='pt-28'][class*='bg-navy-950'] {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(14, 165, 233, 0.12), transparent 28rem),
+    radial-gradient(circle at 90% 5%, rgba(250, 204, 21, 0.14), transparent 24rem),
+    linear-gradient(180deg, #fbfdff 0%, #f1f8ff 100%) !important;
+  color: var(--ink);
+}
+
+.travel-light .flex-1 > div[class*='pt-'] {
+  color: var(--ink) !important;
+}
+
+.travel-light main section:not(.hero-section) .text-slate-100,
+.travel-light main section:not(.hero-section) .text-slate-200,
+.travel-light main > div .text-slate-100,
+.travel-light main > div .text-slate-200,
+.travel-light .flex-1 > div[class*='pt-'] .text-slate-100,
+.travel-light .flex-1 > div[class*='pt-'] .text-slate-200,
+.travel-light .flex-1 > div[class*='pt-'] .text-white {
+  color: #172033 !important;
+}
+
+.travel-light main section:not(.hero-section) .text-slate-300,
+.travel-light main section:not(.hero-section) .text-slate-400,
+.travel-light main > div .text-slate-300,
+.travel-light main > div .text-slate-400,
+.travel-light .flex-1 > div[class*='pt-'] .text-slate-300,
+.travel-light .flex-1 > div[class*='pt-'] .text-slate-400,
+.travel-light .flex-1 > div[class*='pt-'] .text-slate-500 {
+  color: var(--muted) !important;
+}
+
+.travel-light main section:not(.hero-section) .text-gold-300,
+.travel-light main section:not(.hero-section) .text-gold-400,
+.travel-light main section:not(.hero-section) .text-gold-500,
+.travel-light main > div .text-gold-300,
+.travel-light main > div .text-gold-400,
+.travel-light main > div .text-gold-500,
+.travel-light .flex-1 > div[class*='pt-'] .text-gold-300,
+.travel-light .flex-1 > div[class*='pt-'] .text-gold-400,
+.travel-light .flex-1 > div[class*='pt-'] .text-gold-500 {
+  color: #0369a1 !important;
+}
+
+.travel-light main section:not(.hero-section) .absolute .text-white,
+.travel-light main section:not(.hero-section) .absolute.text-white,
+.travel-light main section:not(.hero-section) .absolute .text-slate-100,
+.travel-light main section:not(.hero-section) .absolute .text-slate-200,
+.travel-light main section:not(.hero-section) .absolute .text-slate-300,
+.travel-light main > div .absolute .text-white,
+.travel-light main > div .absolute.text-white,
+.travel-light main > div .absolute .text-slate-100,
+.travel-light main > div .absolute .text-slate-200,
+.travel-light main > div .absolute .text-slate-300,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-white,
+.travel-light .flex-1 > div[class*='pt-'] .absolute.text-white,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-slate-100,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-slate-200,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-slate-300 {
+  color: #f8fafc !important;
+  text-shadow: 0 2px 18px rgba(2, 6, 23, 0.45);
+}
+
+.travel-light main section:not(.hero-section) .absolute .text-gold-300,
+.travel-light main section:not(.hero-section) .absolute .text-gold-400,
+.travel-light main > div .absolute .text-gold-300,
+.travel-light main > div .absolute .text-gold-400,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-gold-300,
+.travel-light .flex-1 > div[class*='pt-'] .absolute .text-gold-400 {
+  color: #fde68a !important;
+  text-shadow: 0 2px 14px rgba(2, 6, 23, 0.5);
+}
+
+.travel-light main section:not(.hero-section) .bg-navy-900,
+.travel-light main section:not(.hero-section) .bg-navy-800,
+.travel-light main section:not(.hero-section) .bg-navy-850,
+.travel-light main section:not(.hero-section) .bg-navy-950,
+.travel-light main > div .bg-navy-900,
+.travel-light main > div .bg-navy-800,
+.travel-light main > div .bg-navy-850,
+.travel-light main > div .bg-navy-950,
+.travel-light .flex-1 > div[class*='pt-'] .bg-navy-900,
+.travel-light .flex-1 > div[class*='pt-'] .bg-navy-800,
+.travel-light .flex-1 > div[class*='pt-'] .bg-navy-850,
+.travel-light .flex-1 > div[class*='pt-'] .bg-navy-950 {
+  background-color: rgba(255, 255, 255, 0.84) !important;
+}
+
+.travel-light input,
+.travel-light select,
+.travel-light textarea {
+  color: #172033 !important;
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: rgba(15, 23, 42, 0.16) !important;
+  box-shadow: 0 10px 28px -22px rgba(15, 23, 42, 0.42) !important;
+}
+
+.travel-light input::placeholder,
+.travel-light textarea::placeholder {
+  color: #64748b !important;
+}
+
+.travel-light select {
+  color: #172033 !important;
+  appearance: auto;
+}
+
+.travel-light select option {
+  color: #172033;
+  background: #ffffff;
+}
+
+.travel-light label,
+.travel-light legend {
+  color: #334155 !important;
+}
+
+.travel-light input[type='radio'],
+.travel-light input[type='checkbox'] {
+  accent-color: #0284c7;
+  box-shadow: none !important;
+}
+
+.travel-light input[type='range'] {
+  accent-color: #0284c7;
+  background: #dbeafe !important;
+  box-shadow: none !important;
+}
+
+.travel-light .travel-field {
+  background: #ffffff !important;
+  border-color: rgba(14, 165, 233, 0.22) !important;
+  box-shadow: 0 16px 42px -34px rgba(15, 23, 42, 0.5) !important;
+}
+
+.travel-light .travel-field:hover,
+.travel-light .travel-field:focus-within {
+  border-color: rgba(2, 132, 199, 0.55) !important;
+  box-shadow: 0 20px 52px -34px rgba(2, 132, 199, 0.5) !important;
+}
+
+.travel-light .travel-field .text-gold-400,
+.travel-light .travel-field .text-gold-300 {
+  color: #0369a1 !important;
+}
+
+.travel-light .travel-field input,
+.travel-light .travel-field button,
+.travel-light .travel-field span {
+  color: #172033 !important;
+  text-shadow: none !important;
+}
+
+.travel-light .travel-field input::placeholder {
+  color: #64748b !important;
+}
+
+.travel-light .travel-dropdown {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid rgba(14, 165, 233, 0.24) !important;
+  box-shadow:
+    0 22px 60px -28px rgba(15, 23, 42, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.85) inset !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.travel-light .travel-dropdown .text-slate-200,
+.travel-light .travel-dropdown .text-slate-100,
+.travel-light .travel-dropdown-title {
+  color: #172033 !important;
+  font-weight: 800 !important;
+}
+
+.travel-light .travel-dropdown .text-slate-400,
+.travel-light .travel-dropdown-subtitle {
+  color: #64748b !important;
+  font-weight: 600 !important;
+}
+
+.travel-light .travel-dropdown .border-white\/5,
+.travel-light .travel-dropdown .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+.travel-light .travel-stepper {
+  background: #eff6ff !important;
+  border: 1px solid rgba(14, 165, 233, 0.24) !important;
+  color: #075985 !important;
+  box-shadow: none !important;
+}
+
+.travel-light .travel-stepper:hover {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.travel-light .travel-stepper-value {
+  color: #0369a1 !important;
+  font-size: 0.875rem !important;
+}
+
+.travel-light .travel-dropdown-confirm {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e) !important;
+  color: #ffffff !important;
+  box-shadow: 0 14px 32px -20px rgba(2, 132, 199, 0.65) !important;
+  letter-spacing: 0.04em !important;
+}
+
+.travel-light .travel-select {
+  color: #172033 !important;
+}
+
+.travel-light .travel-select-trigger {
+  background: #ffffff !important;
+  border: 1px solid rgba(14, 165, 233, 0.24) !important;
+  color: #172033 !important;
+  box-shadow: 0 14px 34px -28px rgba(15, 23, 42, 0.48) !important;
+}
+
+.travel-light .travel-select-trigger:hover,
+.travel-light .travel-select:focus-within .travel-select-trigger {
+  border-color: rgba(2, 132, 199, 0.56) !important;
+  box-shadow: 0 20px 48px -32px rgba(2, 132, 199, 0.52) !important;
+}
+
+.travel-light .travel-select-menu {
+  background: #ffffff !important;
+  border-color: rgba(14, 165, 233, 0.26) !important;
+  box-shadow: 0 24px 60px -28px rgba(15, 23, 42, 0.45) !important;
+}
+
+.travel-light .travel-select-option {
+  background: #ffffff !important;
+  color: #172033 !important;
+}
+
+.travel-light .travel-select-option:hover,
+.travel-light .travel-select-option.is-selected {
+  background: #e0f2fe !important;
+  color: #075985 !important;
+}
+
+.travel-light select,
+.travel-light [role='combobox'] {
+  min-height: 2.75rem;
+  border-radius: 999px;
+  color: #172033 !important;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 252, 255, 0.98)) !important;
+  border-color: rgba(14, 165, 233, 0.24) !important;
+  font-weight: 700 !important;
+}
+
+.travel-light select option {
+  background: #ffffff !important;
+  color: #172033 !important;
+}
+
+.travel-light button[class*='w-6'][class*='h-6'][class*='rounded'],
+.travel-light button[class*='w-7'][class*='h-7'][class*='rounded'] {
+  background: #e0f2fe !important;
+  border: 1px solid rgba(2, 132, 199, 0.28) !important;
+  color: #075985 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.travel-light button[class*='w-6'][class*='h-6'][class*='rounded']:hover,
+.travel-light button[class*='w-7'][class*='h-7'][class*='rounded']:hover {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+.travel-light .border-white\/10,
+.travel-light .border-white\/5 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+.travel-light .divide-white\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+.travel-light .shadow-2xl {
+  box-shadow: 0 24px 70px -42px rgba(15, 23, 42, 0.48) !important;
+}
+
+.travel-light .search-dock {
+  width: 100%;
+  max-width: none !important;
+  background:
+    linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(2, 6, 23, 0) 34%, rgba(240, 249, 255, 0.82) 35%, rgba(240, 249, 255, 1) 100%),
+    radial-gradient(circle at 12% 0%, rgba(14, 165, 233, 0.18), transparent 28rem),
+    radial-gradient(circle at 88% 18%, rgba(250, 204, 21, 0.16), transparent 24rem);
+}
+
+.travel-light .search-dock > .glass-dark {
+  transform: translateY(-0.75rem);
+}
+
+.travel-light .deals-section {
+  background-color: #020617 !important;
+}
+
+.travel-light .deals-copy,
+.travel-light .deals-copy h2,
+.travel-light .deals-section h2,
+.travel-light .deals-section h2 span,
+.travel-light .deals-copy p,
+.travel-light .deals-copy span,
+.travel-light .deals-copy div {
+  color: #f8fafc !important;
+  text-shadow: 0 3px 22px rgba(2, 6, 23, 0.72);
+}
+
+.travel-light .deals-copy .text-slate-300,
+.travel-light .deals-copy .text-slate-200 {
+  color: #dbeafe !important;
+}
+
+.travel-light .deals-copy .text-gold-300,
+.travel-light .deals-copy .text-gold-400,
+.travel-light .deals-copy strong {
+  color: #facc15 !important;
+}
+
+.travel-light .deals-copy .text-gold-gradient {
+  background: linear-gradient(135deg, #67e8f9 0%, #34d399 48%, #fde047 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 3px 18px rgba(2, 6, 23, 0.65));
+}
+
+.travel-light .deals-section .inline-flex,
+.travel-light .deals-section .grid .flex {
+  color: #e0f2fe !important;
+}
+
+.travel-light .deals-section button span,
+.travel-light .deals-section button svg {
+  color: #07111f !important;
+  text-shadow: none !important;
+}
+
+.travel-light .deals-countdown {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.travel-light .deals-countdown,
+.travel-light .deals-countdown span,
+.travel-light .deals-countdown p {
+  color: #172033 !important;
+  text-shadow: none !important;
+}
+
+.travel-light .deals-countdown .text-gold-300,
+.travel-light .deals-countdown .text-gold-400 {
+  color: #0369a1 !important;
+}
+
+.travel-light .deals-countdown .bg-navy-900\/90 {
+  background: #172033 !important;
+}
+
+.travel-light .deals-countdown .bg-navy-900\/90 span {
+  color: #38bdf8 !important;
+}
+
+.travel-light .card-action-row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.25rem;
+  padding: 0.75rem 0.9rem !important;
+  border: 1px solid rgba(14, 165, 233, 0.14) !important;
+  border-radius: 1rem;
+  background:
+    linear-gradient(90deg, rgba(224, 242, 254, 0.78), rgba(254, 249, 195, 0.62)) !important;
+}
+
+.travel-light .card-action-row span {
+  color: #075985 !important;
+}
+
+.travel-light .card-action-row span:first-child {
+  color: #64748b !important;
+}
+
+.travel-light .card-action-row button {
+  background: rgba(255, 255, 255, 0.68) !important;
+  color: #0369a1 !important;
+  border-color: rgba(14, 165, 233, 0.28) !important;
+}
+
+.image-badge {
+  background: rgba(15, 23, 42, 0.88) !important;
+  border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  color: #ffffff !important;
+  font-weight: 800;
+  text-shadow: 0 1px 10px rgba(2, 6, 23, 0.72);
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.22);
+}
+
+.image-badge * {
+  color: inherit !important;
+}
+
+.travel-light input[type='date'] {
+  color-scheme: light;
+}
+
+.travel-light input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  cursor: pointer;
+  filter: invert(31%) sepia(80%) saturate(1276%) hue-rotate(177deg) brightness(89%) contrast(91%);
+}
+
+.travel-light .travel-dropdown,
+.travel-light .travel-dropdown * {
+  text-shadow: none !important;
+}
+
+.travel-light .travel-dropdown div,
+.travel-light .travel-dropdown .text-slate-200,
+.travel-light .travel-dropdown [class*='text-slate-200'] {
+  color: #111827 !important;
+}
+
+.travel-light .travel-dropdown .text-slate-400,
+.travel-light .travel-dropdown [class*='text-slate-400'] {
+  color: #475569 !important;
+}
+
+.travel-light .travel-dropdown .travel-stepper,
+.travel-light .travel-dropdown button.travel-stepper {
+  color: #075985 !important;
+}
+
+.travel-light .travel-dropdown .travel-stepper:hover,
+.travel-light .travel-dropdown button.travel-stepper:hover {
+  color: #ffffff !important;
+}
+
+.travel-light button,
+.travel-light a,
+.travel-light .glass-card,
+.travel-light .glass-dark {
+  transition:
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 240ms ease,
+    border-color 240ms ease,
+    background-color 240ms ease,
+    color 200ms ease;
+}
+
+.travel-light button:hover,
+.travel-light a:hover {
+  transform: translateY(-1px);
+}
+
+.hero-section .glass-dark {
+  background: rgba(8, 16, 38, 0.58);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+}
+
+.hero-readable-overlay {
+  background:
+    linear-gradient(90deg, rgba(2, 6, 23, 0.74) 0%, rgba(15, 23, 42, 0.52) 46%, rgba(2, 6, 23, 0.68) 100%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.42) 0%, rgba(2, 6, 23, 0.2) 42%, rgba(2, 6, 23, 0.78) 100%);
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .text-slate-100,
+.hero-section .text-slate-200,
+.hero-section .text-slate-300 {
+  color: #f8fafc !important;
+  text-shadow: 0 3px 24px rgba(2, 6, 23, 0.72);
+}
+
+.hero-section .text-gold-gradient {
+  background: linear-gradient(135deg, #fff7d6 0%, #f4d06f 48%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition:
+    opacity 720ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    transform 720ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
