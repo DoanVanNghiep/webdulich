@@ -7,7 +7,7 @@ export const BlogView: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
-  const categories = ['all', 'Travel Guide', 'Kinh Nghiá»‡m', 'Cáº£m Há»©ng'];
+  const categories = ['all', 'Travel Guide', 'Kinh Nghiệm', 'Cảm Hứng'];
 
   const filteredPosts = activeCategory === 'all'
     ? BLOG_POSTS_DATA
@@ -92,13 +92,13 @@ export const BlogView: React.FC = () => {
             <span>Stories & Inspirations</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-bold text-slate-100 leading-tight">
-            Cáº©m Nang & CÃ¢u Chuyá»‡n <br />
+            Cẩm Nang & Câu Chuyện <br />
             <span className="text-gold-gradient italic font-normal">
-              Du Lá»‹ch ThÆ°á»£ng LÆ°u
+              Du Lịch Thượng Lưu
             </span>
           </h1>
           <p className="text-sm text-slate-300 mt-3 font-light">
-            Cáº­p nháº­t nhá»¯ng xu hÆ°á»›ng du lá»‹ch má»›i nháº¥t, kinh nghiá»‡m xin visa vÃ  nhá»¯ng Ä‘á»‹a Ä‘iá»ƒm nghá»‰ dÆ°á»¡ng Ä‘áº³ng cáº¥p báº­c nháº¥t.
+            Cập nhật những xu hướng du lịch mới nhất, kinh nghiệm xin visa và những địa điểm nghỉ dưỡng đẳng cấp bậc nhất.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export const BlogView: React.FC = () => {
                   : 'bg-navy-900 text-slate-300 hover:text-white border border-white/5'
               }`}
             >
-              {cat === 'all' ? 'Táº¥t cáº£ bÃ i viáº¿t' : cat}
+              {cat === 'all' ? 'Tất cả bài viết' : cat}
             </button>
           ))}
         </div>
@@ -161,9 +161,9 @@ export const BlogView: React.FC = () => {
                 </div>
 
                 <div className="card-action-row mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs">
-                  <span className="text-slate-400">TÃ¡c giáº£: {post.author}</span>
+                  <span className="text-slate-400">Tác giả: {post.author}</span>
                   <span className="text-gold-400 font-bold uppercase tracking-wider group-hover:text-gold-300 inline-flex items-center gap-1">
-                    Äá»c tiáº¿p <ArrowRight className="w-3.5 h-3.5" />
+                    Đọc tiếp <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>
               </div>

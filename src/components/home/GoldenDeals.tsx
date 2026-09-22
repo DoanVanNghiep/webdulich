@@ -59,13 +59,13 @@ export const GoldenDeals: React.FC<GoldenDealsProps> = ({ onClaimDeal }) => {
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-slate-100 leading-tight">
-              {t('deals.title')} <br />
+              <span className="deals-title-main text-white">{t('deals.title')}</span> <br />
               <span className="text-gold-gradient font-display italic font-normal">
                 {t('deals.titleAccent')}
               </span>
             </h2>
 
-            <p className="text-base sm:text-lg text-slate-200 font-light leading-relaxed max-w-xl">
+            <p className="deals-description text-base sm:text-lg text-white font-light leading-relaxed max-w-xl">
               {t('deals.desc')}
             </p>
 

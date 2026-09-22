@@ -1,7 +1,7 @@
 import React from 'react';
 import { BLOG_POSTS_DATA } from '../../data/blogData';
 import { BlogPost } from '../../types';
-import { Clock, Calendar, ArrowRight, BookOpen, Sparkles } from 'lucide-react';
+import { Clock, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 
 interface BlogSectionProps {
   onSelectPost: (post: BlogPost) => void;

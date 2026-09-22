@@ -468,6 +468,15 @@
   color: #dbeafe !important;
 }
 
+.deals-copy .deals-title-main,
+.deals-copy .deals-description,
+.travel-light .deals-copy .deals-title-main,
+.travel-light .deals-copy .deals-description {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 3px 22px rgba(2, 6, 23, 0.72);
+}
+
 .travel-light .deals-copy .text-gold-300,
 .travel-light .deals-copy .text-gold-400,
 .travel-light .deals-copy strong {
